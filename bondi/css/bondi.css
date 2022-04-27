@@ -1,0 +1,203 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main-btn {
+  background-color: var(--red-color);
+  color: #ffc400;
+  padding: 0.5rem 1rem;
+}
+.main-title::after{
+  content: '';
+  width: 120px;
+  height: 2px;
+  background-color: #33d1cc;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/**************
+navbar
+***************/
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: #eff7fa;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus {
+  color: var(--green-color);
+}
+.navbar-nav .serch {
+  border-left: 1px solid var(#33d1cc);
+}
+.serch svg {
+  color: var(--green-color);
+}
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border-color: white;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+/*******************
+start landing
+*********************/
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+  text-transform: capitalize;
+}
+/*******************
+end landing
+*********************/
+/*******************
+start features
+*********************/
+.features .icon-holder {
+  height: 200px;
+}
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .icon-holder  .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.features .icon-holder .icon {
+  color: var(--green-color);
+}
+.features .feat h4 {
+  color: #ffc400;
+}
+/*******************
+end features
+*********************/
+/*******************
+start ourwork
+*********************/
+.our-work {
+  background-color: var(--section-color);
+}
+.our-work ul .active {
+  color: #ffc400;
+  background-color: #ff3150;
+}
+.our-work ul li {
+  padding: .5rem 1.3rem;
+  cursor: pointer;
+}
+.our-work ul li:not(.active):hover {
+background-color: #ff3150;
+}
+.our-work .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: #33d1ccb9;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  transition: 0.5s all;
+  font-size: 1.5rem;
+  transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover:before {
+  transform: translateX(0);
+}
+/*******************
+end ourwork
+*********************/
+/* start stuff */
+.stuff .desc {
+  max-width: 500px;
+}
+/* end stuff */
+/* start meet */
+.team {
+  background-color: var(--section-color);
+}
+.team .text-box h3 {
+ color: #ffc400;
+}
+.team .row h3 {
+  background-color: #33d1cc;
+}
+.team .row p {
+  background-color: white;
+  box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.055);
+}
+/* end team */
+/* start proj */
+.start-pro {
+  background-color: #19283f;
+}
+/* end proj */
+.blog .boo {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.116) ;
+}
+
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe input[type="email"] {
+  border: none;
+  border-bottom: 1px solid white;
+}
+.subscribe input[type="email"]:focus {
+  outline: none;
+}
+.subscribe ::placeholder {
+  color: white;
+}
+.subscribe input[type="submit"] {
+background-color: var(--dark-color);
+color: #ffc400;
+}
+/* footer */
+footer {
+  background-color: #19283f;
+}
+footer .info p span {
+  color: #33d1cc;
+  
+}
+footer .info blockquote span {
+  color: #ffc400;
+  
+}
+footer ul li {
+  padding-top: 10px;
+}
+.icon-socile svg {
+  padding-left: 10px;
+}
+.icon-socile svg:first-child {
+  color: #1877F2;
+}
+.icon-socile svg:nth-child(2){
+  color: #0077B5;
+}
+.icon-socile svg:nth-child(3){
+  color: #1DA1F2;
+}
